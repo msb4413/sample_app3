@@ -9,16 +9,23 @@
 </head>
 <body>
 	<div class ="container">
-		<div class ="nav">
+		<header>
 			<nav>
-			<%= link_to "home", '#' %>
-			<%= link_to "help", '#' %>
-			<%= link_to "sign in", '#' %>
+				<%= link_to "Home", '#' %>
+				<%= link_to "Help", '#' %>
+				<%= link_to "Sign in", '#' %>
 			</nav>
-		</div>
-		
-	</div>
-<%= yield %>
+		</header>
 
+<%= yield %>
+		<footer>
+			<nav>
+				<%= link_to "About", '#' %>
+				<%= link_to "Contact", '#' %>
+				<%= link_to "News", 'http://news.railstutorial.org' %>
+				<%= link_to "Rails Tutorial", 'http://railstutorial.org' %>
+			</nav>
+		</footer>
+	</div>
 </body>
 </html>
